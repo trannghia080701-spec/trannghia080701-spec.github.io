@@ -112,6 +112,7 @@ footer .brand{font-family:var(--serif);letter-spacing:.3em;color:var(--gold);fon
  .gallery{grid-template-columns:repeat(2,1fr)}
  .svc .grid{grid-template-columns:1fr 1fr}
  .float{display:block}
+ .contact{padding-bottom:110px}
 }
 @media (max-width:520px){.svc .grid{grid-template-columns:1fr} nav .brand{font-size:16px;letter-spacing:.22em}}
 </style>
@@ -247,7 +248,7 @@ footer .brand{font-family:var(--serif);letter-spacing:.3em;color:var(--gold);fon
   <div class="wrap rv">
     <div class="eyebrow" data-en="Contact">Liên hệ</div>
     <h2 data-en="Tell us your dates">Cho chúng tôi biết ngày bạn đến</h2>
-    <p data-en="Send your dates and number of guests. We reply with available apartments and photos.">Gửi ngày nhận, trả phòng và số khách. Chúng tôi gửi lại căn còn trống kèm ảnh thật của căn.</p>
+    <p data-en="Send your dates and number of guests. We reply with available apartments and photos.">Gửi ngày nhận, trả phòng và số khách. Chúng tôi gửi lại căn còn trống kèm ảnh của từng căn.</p>
     <a class="phone" href="tel:+84981527989">0981 527 989</a>
     <div class="btns">
       <a class="btn solid" href="https://zalo.me/0981527989" target="_blank" rel="noopener">Zalo</a>
@@ -284,7 +285,7 @@ footer .brand{font-family:var(--serif);letter-spacing:.3em;color:var(--gold);fon
   els.forEach(function(el){el.dataset.vi=el.textContent});
   function setLang(l){lang=l;els.forEach(function(el){el.textContent=el.dataset[l]});document.documentElement.lang=l;btn.textContent=l==='vi'?'EN':'VI';try{localStorage.setItem('ben-lang',l)}catch(e){}}
   btn.addEventListener('click',function(){setLang(lang==='vi'?'en':'vi')});
-  try{var s=localStorage.getItem('ben-lang');if(s==='en'||(!s&&!/^vi/i.test(navigator.language)))setLang('en')}catch(e){}
+  try{var s=localStorage.getItem('ben-lang');if(s==='en')setLang('en')}catch(e){}
 })();
 </script>
 </body>
